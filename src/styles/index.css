@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/* ================================
+   TAILWIND V4 THEME
+   ================================ */
+@theme {
+  --color-dark: #090909;
+  --color-dark-light: #111111;
+  --color-dark-lighter: #1a1a1a;
+  --color-dark-card: #0d0d0d;
+  --color-gold: #D4AF37;
+  --color-gold-light: #E5C158;
+  --color-gold-dark: #B8941F;
+  --color-crimson: #8B0000;
+  --color-crimson-light: #A50000;
+  --color-cream: #F5F0E8;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+}
+
+/* BASE */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: #090909;
+  color: #ffffff;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #090909; }
+::-webkit-scrollbar-thumb { background: rgba(212,175,55,0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(212,175,55,0.7); }
+
+/* GLASS */
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.glass-strong {
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* GRADIENT TEXT */
+.gradient-text {
+  background: linear-gradient(135deg, #D4AF37 0%, #E5C158 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* TEXT SHADOWS */
+.text-shadow { text-shadow: 0 2px 20px rgba(0,0,0,0.8); }
+.text-shadow-lg { text-shadow: 0 4px 30px rgba(0,0,0,0.9); }
+
+/* GOLD LINE */
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #D4AF37, #E5C158, #D4AF37);
+  border-radius: 1px;
+}
+
+/* SECTION BG */
+.section-dark { background-color: #090909; }
+.section-dark-alt { background-color: #0d0d0d; }
+
+/* FORM INPUTS */
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.form-input::placeholder { color: rgba(255,255,255,0.35); }
+.form-input:focus {
+  border-color: rgba(212,175,55,0.6);
+  box-shadow: 0 0 0 3px rgba(212,175,55,0.08);
+}
+.form-input.error { border-color: rgba(220,38,38,0.7); }

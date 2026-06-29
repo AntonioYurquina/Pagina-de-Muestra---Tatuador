@@ -1,0 +1,58 @@
+// Opiniones de clientes
+
+export const testimonials = [
+  {
+    id: 1,
+    name: 'María González',
+    image: 'https://i.pravatar.cc/150?img=1',
+    rating: 5,
+    comment: 'Dante es un verdadero artista. Mi tatuaje superó todas mis expectativas. La atención al detalle y el profesionalismo son incomparables. ¡Definitivamente volveré!',
+    tattoo: 'Manga completa de flores',
+    date: '2024-01-15',
+  },
+  {
+    id: 2,
+    name: 'Carlos Ramírez',
+    image: 'https://i.pravatar.cc/150?img=12',
+    rating: 5,
+    comment: 'Experiencia increíble de principio a fin. El diseño personalizado que creó para mí es exactamente lo que soñaba. Studio impecable y ambiente profesional.',
+    tattoo: 'Retrato realista',
+    date: '2024-02-20',
+  },
+  {
+    id: 3,
+    name: 'Ana Martínez',
+    image: 'https://i.pravatar.cc/150?img=5',
+    rating: 5,
+    comment: 'La mejor decisión fue elegir a Dante para mi primer tatuaje. Me hizo sentir cómoda en todo momento y el resultado es una obra de arte. ¡Gracias!',
+    tattoo: 'Fine line minimalista',
+    date: '2024-03-10',
+  },
+  {
+    id: 4,
+    name: 'Roberto Silva',
+    image: 'https://i.pravatar.cc/150?img=13',
+    rating: 5,
+    comment: 'Profesionalismo de primer nivel. Viajé desde otro país específicamente para que Dante hiciera mi tattoo y valió cada segundo. Un maestro en su arte.',
+    tattoo: 'Blackwork geométrico',
+    date: '2024-04-05',
+  },
+  {
+    id: 5,
+    name: 'Laura Fernández',
+    image: 'https://i.pravatar.cc/150?img=9',
+    rating: 5,
+    comment: 'Dante tiene un don especial. No solo ejecuta el diseño perfectamente, sino que realmente entiende la visión del cliente. Mi espalda completa quedó espectacular.',
+    tattoo: 'Diseño custom completo',
+    date: '2024-05-12',
+  },
+  {
+    id: 6,
+    name: 'Diego Torres',
+    image: 'https://i.pravatar.cc/150?img=14',
+    rating: 5,
+    comment: 'Arte de nivel mundial. La técnica, el color, la precisión... todo es perfecto. Recomiendo 100% si buscas calidad premium.',
+    tattoo: 'Anime a color',
+    date: '2024-06-01',
+  },
+];
