@@ -73,7 +73,16 @@ export const Footer = () => {
 
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "32px", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "12px" }}>
           <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "13px" }}>© {new Date().getFullYear()} Dante Cruz. Todos los derechos reservados.</p>
-          <p style={{ color: "rgba(255,255,255,0.25)", fontSize: "12px" }}>Diseñado con pasión para el arte corporal de élite</p>
+          <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "12px" }}>
+            Desarrollado por{" "}
+            <a href="https://arkode.com.ar" target="_blank" rel="noopener"
+              style={{ color: "rgba(255,255,255,0.75)", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: "3px", transition: "color 0.2s" }}
+              onMouseEnter={(e) => e.currentTarget.style.color = "#D4AF37"}
+              onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.75)"}
+            >
+              Arkode
+            </a>
+          </p>
         </div>
       </div>
     </footer>
